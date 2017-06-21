@@ -8,4 +8,4 @@
 
 <p> Ini adalah footer.</p>
 
-@endsection
+@show

@@ -18,9 +18,11 @@
                 </div>
 {{-- comment in blade --}}
 
-{{-- @unless ($age >= 18)
-    You can't vote.
-@endunless --}}
+{{-- conditional logic in
+    @unless ($age >= 18)
+        You can't vote.
+    @endunless --}}
+    
 </body>
 </html>
 

@@ -74,3 +74,13 @@ Route::post('/login', 'LoginController@login');
 Route::get('/test', 'TestController@test');
 
 Route::get('/student', 'TestController@students');
+
+Route::get('/coba', 'SemuaProdukController@coba');
+
+Route::get('/coba2', 'SemuaProdukController@coba2');
+
+Route::get('/coba3', 'SemuaProdukController@coba3');
+
+Route::get('/coba4', 'SemuaProdukController@coba4');
+
+Route::get('/coba5', 'SemuaProdukController@coba5');
