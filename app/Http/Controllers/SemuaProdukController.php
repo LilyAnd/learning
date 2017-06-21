@@ -72,4 +72,54 @@ class SemuaProdukController extends Controller
 	 	return view ('test7', compact('members'));
 	}
 
+	//delete controller
+	// public function update($id)
+	// {
+	// 	$members=DB::table('members')->where ('id', $id)->delete();
+	// 	return view ('test7', compact((varname)))
+
+	// }
+
+	public function form()
+	{
+		return view ('form');
+	}
+
+	public function store(Request $request)
+	{
+		$id = $request->input("id");
+
+
+		$name = $request->input("name");
+		
+		// print $name;
+		// //die();
+		$address = $request->input("address");
+
+		$dob = $request->input("dob");
+
+		$gender = $request->input("gender");
+
+		$email = $request->input("email");
+
+		$city = $request->input("city");
+
+		$country = $request->input("country");
+
+		DB::table('members')->insert
+		(
+			[
+			"id"=>$id,
+			"name"=>$name,
+			"address"=>$address,
+			"dob"=>$dob,
+			"gender"=>$gender,
+			"email"=>$email,
+			"city"=>$city,
+			"country"=>$country
+			]
+		);
+		print "sukses";
+		die();
+	}
 }

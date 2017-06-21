@@ -13,6 +13,7 @@
     	<th>Username</th>
     	<th>Password</th>
     	<th>Name</th>
+    	<th>
   	</tr>
 
   	<tr>

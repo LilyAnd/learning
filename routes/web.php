@@ -88,3 +88,9 @@ Route::get('/coba5', 'SemuaProdukController@coba5');
 Route::get('/test6', 'SemuaProdukController@test6');
 
 Route::get('/test6_detail/{id}', 'SemuaProdukController@test7');
+
+Route::get('/test6_detail/{id}', 'SemuaProdukController@update');
+
+Route::get('/form', 'SemuaProdukController@form');
+
+Route::post('/member_insert', 'SemuaProdukController@store');
