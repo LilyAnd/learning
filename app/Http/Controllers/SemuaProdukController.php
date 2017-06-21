@@ -62,14 +62,14 @@ class SemuaProdukController extends Controller
 		return view ('test6', compact('members'));
 	}
 
-	
- public function test7($id)
-	 {
+
+ 	public function test7($id)
+	{
 	 	// print $id;
 	 	// die();
 
     	$members=DB::table('members')->where('id', $id )->get();
-	 	return view ('test6', compact('members'));
-	 }
+	 	return view ('test7', compact('members'));
+	}
 
 }

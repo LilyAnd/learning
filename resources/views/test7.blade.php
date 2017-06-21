@@ -10,7 +10,6 @@
     	<th>Id</th>
     	<th>Name</th>
     	<th>Address</th>
-    	<th>Gender</th>
     	<th>Date of Birthday</th>
     	<th>Gender</th>
     	<th>Email</th>
@@ -30,11 +29,11 @@
 	</td>	
 
 	<td>
-	{{$val->name}}<br/>
+		{{$val->name}}<br/>
 	</td>
 
 	 <td>
-	{{$val->address}}<br/>
+		{{$val->address}}<br/>
 	</td> 
 
 	<td>
@@ -42,11 +41,11 @@
 	</td>	
  
 	<td>
-	@if($val->gender==0)
-		Male
-	@else
-		Female
-	@endif
+		@if($val->gender==0)
+			Male
+		@else
+			Female
+		@endif
 
 	</td>
 
