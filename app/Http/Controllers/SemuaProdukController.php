@@ -33,12 +33,12 @@ class SemuaProdukController extends Controller
 	// {
  //    	$chefs=DB::table('chefs')->get();
 
- //   		return view ('coba', compact('chefs'));
+ //   	return view ('coba', compact('chefs'));
 	// }
 
 	// public function coba3()
 	// {
-	// 	$books=Book::all();
+	//		$books=Book::all();
 	//     return view ('coba', compact('books'));
 	// }
 
@@ -53,4 +53,23 @@ class SemuaProdukController extends Controller
 	// 	$phones=Phone::all();
  //    	return view ('coba5', compact('phones'));
 	// }
+
+
+
+	 public function test6()
+	{
+   		$members=DB::table('members')->get();
+		return view ('test6', compact('members'));
+	}
+
+	
+ public function test7($id)
+	 {
+	 	// print $id;
+	 	// die();
+
+    	$members=DB::table('members')->where('id', $id )->get();
+	 	return view ('test6', compact('members'));
+	 }
+
 }

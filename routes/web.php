@@ -84,3 +84,7 @@ Route::get('/coba3', 'SemuaProdukController@coba3');
 Route::get('/coba4', 'SemuaProdukController@coba4');
 
 Route::get('/coba5', 'SemuaProdukController@coba5');
+
+Route::get('/test6', 'SemuaProdukController@test6');
+
+Route::get('/test6_detail/{id}', 'SemuaProdukController@test7');

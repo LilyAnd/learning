@@ -16,16 +16,9 @@ class TestController extends Controller
 
     //$male=DB::table('students')->where('gender', 0)->get();
 
-
-
     //return view ('test', compact('students'));
 
-		    $students=Student::all();
-    return view ('test', compact('students'));
-
+		$students=Student::all();
+    	return view ('test', compact('students'));
 	}
-
-
-
-
 }
