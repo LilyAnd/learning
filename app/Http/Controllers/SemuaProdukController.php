@@ -12,65 +12,45 @@ class SemuaProdukController extends Controller
 {
     public function semua_produk()
 	{
-    return view('semua');
+   		return view('semua');
 	}
 
 	public function coba()
 	{
-    $accounts=DB::table('accounts')->get();
+    	$accounts=DB::table('accounts')->get();
+    	$chefs=DB::table('chefs')->get();
+    	$books=Book::all();
+    	$laptops=Laptop::all();
+    	$phones=Phone::all();
 
-    return view ('coba', compact('accounts'));
+    	return view ('coba', compact('accounts','chefs','books','laptops','phones'));  
 
-    //$chefs=DB::table('chefs')->get();
-
-    //return view ('coba', compact('chefs'));
-    
-
-	//$accounts=Account::all();
-    //return view ('coba', compact('accounts'));
-
+		//$accounts=Account::all();
+    	//return view ('coba', compact('accounts'));
 	}
 
-	public function coba2()
-	{
+	// public function coba2()
+	// {
+ //    	$chefs=DB::table('chefs')->get();
 
-    $chefs=DB::table('chefs')->get();
+ //   		return view ('coba', compact('chefs'));
+	// }
 
-    return view ('coba2', compact('chefs'));
-    
+	// public function coba3()
+	// {
+	// 	$books=Book::all();
+	//     return view ('coba', compact('books'));
+	// }
 
-	//$accounts=Account::all();
-    //return view ('coba', compact('accounts'));
+	// public function coba4()
+	// {
+	// 	$laptops=Laptop::all();
+ //    	return view ('coba', compact('laptops'));
+	// }
 
-	}
-
-	public function coba3()
-	{
-
-
-	$books=Book::all();
-    return view ('coba3', compact('books'));
-
-	}
-
-
-	public function coba4()
-	{
-
-
-	$laptops=Laptop::all();
-    return view ('coba4', compact('laptops'));
-
-	}
-
-	public function coba5()
-	{
-
-
-	$phones=Phone::all();
-    return view ('coba5', compact('phones'));
-
-	}
-
-
+	// public function coba5()
+	// {
+	// 	$phones=Phone::all();
+ //    	return view ('coba5', compact('phones'));
+	// }
 }
